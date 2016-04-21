@@ -1,5 +1,5 @@
 import configparser
-from core.bot import Bot 
+from core.irc import IRC
 
 # Config handle
 config = configparser.ConfigParser()
@@ -14,8 +14,8 @@ def init():
 	config = config["DEFAULT"]
 
 	# Create and start bot
-	bot = Bot(config)
-	bot.start()
+	irc = IRC(config)
+	irc.start()
 
 if __name__ == "__main__":
 	init()
