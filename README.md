@@ -19,36 +19,36 @@ a single channel)*.**
 
 ## Structure
 ```
-root
-| -- bot.py
-| -- bot.conf
-| -- channels.conf
-| -- core
-| -- rules
-     | -- my_rule.py
-     | -- my_other_rule
-          | -- my_other_rule.py
-| -- commands
-     | -- my_cmd.py
-     | -- my_other_cmd
-          | -- my_other_cmd.py
+.
+├── bot.py
+├── bot.conf
+├── channels.conf
+├── core
+├── rules
+|    ├── my_rule.py
+|    ├── my_other_rule
+|    :    └── __init__.py
+└── commands
+     ├── my_cmd.py
+     ├── my_other_cmd
+     :    └── __init__.py
 ```
-### root
-#### bot.py
-This is the main star-file of the bot.
 
-#### bot.conf
+### bot.py
+This is the main start-file of the bot.
+
+### bot.conf
 This is the config-file for all settings of the bot.
 
-| Setting  | Description                         |
-| -------- | ----------------------------------- |
-| host     | Host server (eg. *irc.twitch.tv*).  |
-| port     | Server port (eg. *6667*).           |
-| nick     | Nickname for the bot.               |
-| password | OAuth-key for authenticating.       |
-| channel  | Channel to join.                    |
+| Setting  | Description                                        |
+| -------- | -------------------------------------------------- |
+| host     | Host server (eg. *irc.twitch.tv*).                 |
+| port     | Server port (eg. *6667*).                          |
+| nick     | Nickname for the bot.                              |
+| password | OAuth-key for authentication towards server.       |
+| channel  | Channel to join.                                   |
 
-#### channels.conf
+### channels.conf
 **Currently not in use**  
 Will, in the future, contain a list of all channels to join on start.
 
