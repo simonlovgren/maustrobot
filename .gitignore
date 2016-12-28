@@ -89,3 +89,4 @@ ENV/
 .ropeproject
 
 # Custom ignores
+bot.conf
