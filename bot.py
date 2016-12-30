@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import configparser
 from core.irc import IRC
 
